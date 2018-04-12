@@ -1,3 +1,7 @@
+## Gainers filter
+```
+{"filter":[{"left":"volume|60","operation":"nempty"},{"left":"exchange","operation":"equal","right":"BINANCE"},{"left":"change|60","operation":"greater","right":0},{"left":"Recommend.All|60","operation":"nequal","right":0},{"left":"Recommend.MA|60","operation":"nequal","right":0},{"left":"Recommend.Other|60","operation":"nequal","right":0},{"left":"name,description","operation":"match","right":"BTC"}],"filter2":{"operator":"and","operands":[{"operation":{"operator":"or","operands":[{"expression":{"left":"Recommend.All|60","operation":"in_range","right":[0,0.5]}},{"expression":{"left":"Recommend.All|60","operation":"in_range","right":[0.5,1]}}]}},{"operation":{"operator":"or","operands":[{"expression":{"left":"Recommend.MA|60","operation":"in_range","right":[0,0.5]}},{"expression":{"left":"Recommend.MA|60","operation":"in_range","right":[0.5,1]}}]}},{"operation":{"operator":"or","operands":[{"expression":{"left":"Recommend.Other|60","operation":"in_range","right":[0,0.5]}},{"expression":{"left":"Recommend.Other|60","operation":"in_range","right":[0.5,1]}}]}}]},"symbols":{"query":{"types":[]}},"columns":["name","close|60","change|60","change_abs|60","high|60","low|60","volume|60","Recommend.All|60","exchange","Recommend.MA|60","Recommend.Other|60","description","name","subtype","pricescale","minmov","fractional","minmove2"],"sort":{"sortBy":"volume|60","sortOrder":"desc"},"options":{"lang":"en"},"range":[0,150]}
+```
 
 ## Trading Binance BTC/USDT for 15 min
 ```
